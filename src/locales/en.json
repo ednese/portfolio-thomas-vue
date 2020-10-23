@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": {
+      "title": "HOME",
+      "link": "home",
+      "key": 1
+    },
+    "about": {
+      "title": "ABOUT",
+      "link": "about",
+      "key": 2
+    },
+    "portfolio": {
+      "title": "PORTFOLIO",
+      "link": "portfolio",
+      "key": 3
+    },
+    "contact": {
+      "title": "CONTACT",
+      "link": "contact",
+      "key": 4
+    }
+  },
+  "header": "GRAPHIC DESIGNER",
+  "about": {
+    "paragraph": "Freelance graphic designer based in Ile-De-France, I put at your disposal available my know-how and my creativity. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae sem eget ex sollicitudin blandit. Donec gravida felis id malesuada dapibus. Aliquam nec mi orci. Vivamus turpis elit, dictum eu justo vel, varius sodales elit. Integer quis pharetra libero. Curabitur euismod, turpis quis aliquam semper, erat neque ultrices orci, sit amet hendrerit urna est eget magna. Nulla hendrerit dapibus nulla, ac bibendum dui vestibulum nec. Praesent non tincidunt massa. Duis pellentesque, mi vel sodales eleifend, enim nulla vestibulum magna, vel tincidunt enim est ut turpis. Nullam laoreet arcu a.",
+    "software": "the softwares I use"
+  },
+  "contact": {
+    "name": "NAME",
+    "send": "Send",
+    "message": "Your message has been sent"
+  },
+  "footer":{
+    "social": "SOCIALS NETWORKS",
+    "phone": "PHONE"
+  },
+  "work":{
+    "project": "Project",
+    "software": "Softwares used",
+    "animation": "Video Animation",
+    "design": "Design for web",
+    "logo": "Logo",
+    "banner": "Banner",
+    "see": "See the project"
+  }
+}

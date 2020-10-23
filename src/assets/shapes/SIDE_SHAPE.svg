@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="894.073" height="618.443" viewBox="0 0 894.073 618.443">
+  <defs>
+    <filter id="Tracé_77" x="149.537" y="210.959" width="505.933" height="379.739" filterUnits="userSpaceOnUse">
+      <feOffset dx="-6" dy="-6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracé_78" x="203.476" y="0" width="690.597" height="498.173" filterUnits="userSpaceOnUse">
+      <feOffset dx="-6" dy="-6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_15" data-name="Groupe 15" transform="translate(-1561.059 -896.792)">
+    <path id="Tracé_76" data-name="Tracé 76" d="M101.692,2.265,697.036,15.526C753.2,16.777,799.743,62.149,800.994,116.868s-43.264,98.063-99.427,96.812L106.222,200.419C50.059,199.168,3.516,153.8,2.265,99.077S45.529,1.014,101.692,2.265Z" transform="translate(1558 1331.28) rotate(-30)" fill="#e5f8f6"/>
+    <g transform="matrix(1, 0, 0, 1, 1561.06, 896.79)" filter="url(#Tracé_77)">
+      <path id="Tracé_77-2" data-name="Tracé 77" d="M59.238,1.319,408.744,9.1c32.716.729,59.829,27.159,60.558,59.034s-25.2,57.124-57.919,56.4L61.877,116.749C29.161,116.02,2.048,89.59,1.319,57.715S26.522.591,59.238,1.319Z" transform="translate(173.25 469.99) rotate(-30)" fill="#73dfd0"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1561.06, 896.79)" filter="url(#Tracé_78)">
+      <path id="Tracé_78-2" data-name="Tracé 78" d="M67.63,1.506,601.761,13.4c37.351.832,68.3,31.007,69.137,67.4s-28.773,65.216-66.124,64.384l-534.131-11.9c-37.351-.832-68.3-31.007-69.137-67.4S30.279.674,67.63,1.506Z" transform="translate(226.94 359.67) rotate(-30)" fill="#03414d"/>
+    </g>
+  </g>
+</svg>

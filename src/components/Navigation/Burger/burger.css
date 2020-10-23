@@ -1,0 +1,89 @@
+.Burger {
+    display: none;
+    order: 2;
+    align-items: center;
+}
+
+.burger__icon {
+    margin: 0 20px;
+    height: 24px;
+    width: 18px;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+}
+.burger__icon span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    background: white;
+    transition: all ease-in-out .1s;
+}
+.burger__icon span::before, .burger__icon span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+}
+.burger__icon span::before {
+    transform: translateY(-5px);
+    transition: all ease-in-out .3s;
+}
+.burger__icon span::after {
+    transform: translateY(5px);
+    transition: all ease-in-out .3s;
+}
+.burger__icon.active span{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.burger__icon.active span::before {
+    background: grey;
+    transform: translateY(0px) rotateZ(45deg);
+}
+.burger__icon.active span::after {
+    background: grey;
+    transform: translateY(0px) rotateZ(-45deg);
+}
+.burger__sidebar {
+  position: absolute;
+  background: #03414c;
+  flex-direction: column;
+  z-index: 2;
+  height: 100vh;
+  width: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  top: 0;right: 0;margin: 0;
+}
+.burger__sidebar.open {
+  width: 0%;
+  animation: side-open .5s forwards;
+}
+@keyframes side-open {
+    100% {width: 100%;}
+}
+.burger__sidebar.close {
+  width: 100%;
+  animation: side-close .5s forwards;
+}
+@keyframes side-close {
+    100% {width: 0%;}
+}
+.burger__sidebar>li{
+    margin: 50px 0;
+}
+.burger__sidebar>li>a{
+    font-weight: bolder;
+    color: white;
+}
+@media screen and (max-width: 650px) {
+    .Burger {
+        display: flex;
+    }
+}
