@@ -50,19 +50,15 @@
     }
 }
 @media screen and (max-width: 1000px) {
-    .Footer {
-        padding-bottom: 1em;
+    .Footer.true {
         padding-top: 6em;
+        padding-bottom: 1em;
     }
     .footer__inner {
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 100px;
-    }
-    .true .footer__inner {
-        margin-top: 400px;
     }
     .footer__container__title{
         text-align: center;

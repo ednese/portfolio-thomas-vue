@@ -36,16 +36,50 @@
 .nav__select {
     background:  rgba(255, 255, 255, 0.1);
     border: none;
+    position: relative;
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
     padding: 6px;
+    width: 15px;
+    cursor: pointer;
     border-radius: 4px;
     transition: all ease-in-out .1s;
+}
+.nav__select>img {
+    transform: rotate(90deg);
 }
 .nav__select:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+.nav__select>div {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    padding: 6px;
+    height: 15px;
+    width: 15px;
+    right: 0;
+    opacity: 0;
+    border-radius: 5px;
+    background: #03414c60;
+    position: absolute;
+}
+.nav__select>.first {
+    margin-top: 0px;
+    animation: openFirst .2s forwards;
+}
+@keyframes openFirst {
+    100% {opacity: 1;
+        margin-top: 40px;}
+  }
+.nav__select>.second {
+    margin-top: 50px;
+    animation: openSecond .2s forwards;
+    animation-delay: .3s;
+}
+@keyframes openSecond {
+    100% {opacity: 1;
+        margin-top: 70px;}
+  }
 .nav__select>option {
     color: black;
 }

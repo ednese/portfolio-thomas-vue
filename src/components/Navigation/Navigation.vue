@@ -7,10 +7,11 @@
                 <a class="nav__bar__container-element" :href="`#/${lang.locale}/#${element.link}`">{{element.title}}</a>
             </li>
         </nav>
-        <select @change="switchLang($event.target.value)" class="nav__select" id="nav__lang">
-            <option :value="select.first">{{select.first}}</option>
-            <option :value="select.second">{{select.second}}</option>
-        </select>
+        <div v-on:click="active = !active" class="nav__select" id="nav__lang">
+            <img class="nav__lang__img" src="../../assets/icones/ARROW.svg" alt="logo"/>
+            <div class="first" v-if="active" v-on:click="switchLang(select.first)" :value="select.first">{{select.first}}</div>
+            <div class="second" v-if="active" v-on:click="switchLang(select.second)" :value="select.second">{{select.second}}</div>
+        </div>
         <Burger :lang="lang"/>
     </div>
   </div>
@@ -30,9 +31,12 @@ export default {
   },
   methods: {
     switchLang: function (language) {
-      this.$router.push({
-        params: {lang: language}
-      })
+      if (this.switch !== language) {
+        this.$router.push({
+          params: {lang: language}
+        })
+      }
+      this.switch = language
     }
   },
   data () {
@@ -51,6 +55,8 @@ export default {
     }
     return {
       lang: i18n,
+      active: false,
+      switch: i18n.locale,
       select: initLang(i18n.locale)
     }
   }
