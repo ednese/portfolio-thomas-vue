@@ -1,4 +1,6 @@
-# thomas-portfolio
+# thomas-portfolio [View the Website here](https://ednese.github.io/portfolio-thomas-vue)
+
+## ![](design.png)
 
 > A Vue.js project
 
