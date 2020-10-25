@@ -14,12 +14,6 @@ export default {
   components: {
     Navigation,
     Footer
-  },
-  data () {
-    return {
-      msg: 'i18n',
-      element: false
-    }
   }
 }
 </script>

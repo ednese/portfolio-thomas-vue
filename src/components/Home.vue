@@ -26,7 +26,6 @@ export default {
   },
   data () {
     return {
-      msg: 'i18n',
       element: true
     }
   }
