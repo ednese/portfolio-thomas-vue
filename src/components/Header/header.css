@@ -47,6 +47,7 @@
     opacity: 1;
     margin: 10px 20px;
 }
+
 @media screen and (max-width: 1400px) {
     .header__illustration {
         width: 30em;

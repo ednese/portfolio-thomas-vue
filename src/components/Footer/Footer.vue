@@ -2,6 +2,7 @@
   <div :class="`Footer ${element}`">
     <div v-if="element"><Contact/></div>
     <div v-else><Work/></div>
+    <div :class="`footer_background_${element}`"/>
     <div class="footer__inner">
       <div class="footer__container left">
         <h1 class="footer__container__title">THOMAS<span>JAUZE</span></h1>

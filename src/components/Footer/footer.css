@@ -2,10 +2,20 @@
     padding: 0 0 6em;
     background-size: cover;
     background-position: center;
-    background-image: url("../../assets/img/WAVE_FOOTER.svg");
 }
 .Footer.true {
     padding: 6em 0;
+}
+.Footer.false {
+    background-image: url("../../assets/img/WAVE_FOOTER.svg");
+}
+.footer_background_true {
+    position: absolute;
+    height: 17vh;
+    margin-top: 300px;
+    width: 100%;
+    z-index: -1;
+    background-color: #03414c;
 }
 .footer__inner {
     display: flex;
@@ -40,6 +50,14 @@
 }
 .footer__copyright {
     opacity: .5;
+}
+@media screen and (max-width: 1920px) {
+    .Footer {
+        background-image: url("../../assets/img/WAVE_FOOTER.svg");
+    }
+    .footer_background_true {
+        display: none;
+    }
 }
 @media screen and (max-width: 1400px) {
     .footer__inner h2 {

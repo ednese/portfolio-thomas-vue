@@ -50,7 +50,7 @@ export default {
           title: 'MOTION DESIGN',
           project: 'Kick',
           type: 'work.animation',
-          link: 'https://kickapp.fr',
+          link: 'https://rb.gy/9tzfh0',
           software: [Ae, Ai]},
         {img: Agerez,
           title: 'WEB DESIGN',
